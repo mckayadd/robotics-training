@@ -1,4 +1,4 @@
-public struct Position
+public readonly struct Position
 {
     public double X { get; } 
     public double Y { get; }

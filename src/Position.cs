@@ -11,11 +11,5 @@ public readonly struct Position
         Z = z;
     }
 
-    // public override string ToString()
-    // {
-    //     string str = $"({X}, {Y}, {Z})";
-    //     return str;
-    // }
-
     public override string ToString() => $"({X}, {Y}, {Z})"; // expression-bodied member
 }

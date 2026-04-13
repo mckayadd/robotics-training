@@ -1,4 +1,6 @@
 ﻿
+using System.Reflection;
+
 namespace RoboticsTraining.Tests;
 
 public class RobotTests
@@ -28,6 +30,12 @@ public class RobotTests
         Assert.Equal(4.0, testRobot.CurrentPosition.X);
         Assert.Equal(5.0, testRobot.CurrentPosition.Y);
         Assert.Equal(6.0, testRobot.CurrentPosition.Z);
+    }
+
+    [Fact]
+    public void NegativeValueTest()
+    {
+        Assert.Throws<ArgumentException>(() => new Position(-1, 2, 3));
     }
 
 }

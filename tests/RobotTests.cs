@@ -30,4 +30,10 @@ public class RobotTests
         Assert.Equal(6.0, testRobot.CurrentPosition.Z);
     }
 
+    [Fact]
+    public void NegativeValueTest()
+    {
+        Assert.Throws<ArgumentException>(() => new Position(-1, 2, 3));
+    }
+
 }

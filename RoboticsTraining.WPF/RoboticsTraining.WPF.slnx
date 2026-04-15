@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../src/RoboticsTraining.csproj" />
+  <Project Path="RoboticsTraining.WPF/RoboticsTraining.WPF.csproj" />
+</Solution>
